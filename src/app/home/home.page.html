@@ -1,0 +1,44 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-title>
+      As minhas notas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>To Do</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Done</ion-label>
+    </ion-segment-button>
+  </ion-segment> 
+  
+  <ion-item (click)="openModal()">
+    <ion-label>
+      levar o carro à inspeção
+    </ion-label>
+  </ion-item>
+
+  <ion-item (click)="openModal()">
+    <ion-label>
+      Pagar o Moche
+    </ion-label>
+  </ion-item>
+
+  <ion-item (click)="openModal()">
+    <ion-label>
+      Estudar para o UC de Mobile
+    </ion-label>
+  </ion-item>
+  
+  
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="openModal()">
+      <ion-icon name="add">
+      </ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
